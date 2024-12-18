@@ -1,5 +1,13 @@
 <nav class="navbar">
-    <!-- <div class="brand">NFTMercado</div>
-    <button class="get-started-btn" (click)="navigateToSignup()">Get Started</button> -->
-  </nav>
+  <a class="navbar-brand" routerLink="">NFTMercado</a>
+  <ul class="navbar-nav">
+    <li class="nav-item" *ngIf="!isLoggedIn">
+      <button class="custom-btn btn-primary" routerLink="/signup">Get Started</button>
+    </li>
+    <li class="nav-item" *ngIf="isLoggedIn">
+      <button class="custom-btn btn-danger" (click)="onLogout()">Logout</button>
+    </li>
+  </ul>
+</nav>
+
   

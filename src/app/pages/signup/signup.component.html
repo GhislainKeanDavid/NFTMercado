@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="signup-container">
     <form [formGroup]="signupForm" (ngSubmit)="onSignup()">
         <h2>Sign Up</h2>
@@ -20,10 +21,10 @@
         <button type="submit" [disabled]="signupForm.invalid">Sign Up</button>
 
         <div class="login-option">
-            <p>Already have an account? 
-              <a (click)="navigateToLogin()">Log In</a>
+            <p>Already have an account?
+                <a (click)="navigateToLogin()">Log In</a>
             </p>
-          </div>
-    
+        </div>
+
     </form>
 </div>

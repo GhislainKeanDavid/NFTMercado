@@ -1,38 +1,139 @@
 /* Navbar Styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #333;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #010409;
+  color: white;
+}
+
+.get-started-btn {
+  background-color: #ffa31a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.get-started-btn:hover {
+  background-color: #ff5733;
+}
+
+/* General Styles */
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #111318cc;
+  min-height: 70vh;
+  box-sizing: border-box;
+}
+
+/* Left Content */
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ffa31a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Right Image */
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.6);
+  width: 800px; /* Adjusted size */
+  animation: float 3s ease-in-out infinite;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* Start and end position */
   }
-  
-  .get-started-btn {
-    background-color: #ff4500;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 5px;
+  50% {
+    transform: translateY(-20px); /* Float up */
   }
-  
-  .get-started-btn:hover {
-    background-color: #ff5733;
-  }
-  
-  /* Hero Section Styles */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
   .hero {
+    flex-direction: column;
     text-align: center;
-    margin-top: 50px;
   }
-  
-  .hero h1 {
-    font-size: 3rem;
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
-  
-  .hero p {
-    font-size: 1.2rem;
-    color: gray;
+
+  .hero-image img {
+    width: 80%; /* Scales image for smaller screens */
   }
+}
+
+.col {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
+}
+
+.card {
+  height: 430px;
+  min-width: 250px;  /* Ensure the card doesn't shrink below this width */
+  max-width: 350px;  /* Optional: Set a max-width */
+  overflow: hidden; /* Hide overflowing content */
+  overflow-y: auto; /* Make the content scrollable */
+  border-radius: 10px;
+  border: 0cm;
+  box-shadow: 8px 10px 10px rgb(255, 255, 255);
+  
+}
+
+.card-img-top {
+  object-fit: cover; /* Keeps images within bounds and prevents stretching */
+}
+
+.card-body {
+  background-color: #f9f9f9
+}
+
+.card-cta-btn {
+  cursor: pointer;
+}
+
