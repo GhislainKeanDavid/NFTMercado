@@ -4,3 +4,27 @@
     padding: 20px;
     text-align: center;
   }
+
+  .assets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .asset-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .asset-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+   
+
+  

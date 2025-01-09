@@ -19,8 +19,10 @@
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
     "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
+    "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
     "rxjs": "~7.8.0",
+    "sweetalert2": "^11.15.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },

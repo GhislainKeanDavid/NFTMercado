@@ -1,72 +1,95 @@
-/* signup.component.css */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
+/* Signup Container */
 .signup-container {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  div {
-    margin-bottom: 10px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-top: 15px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  
-  button:disabled {
-    background-color: #ccc;
-  }
-  
-  .error {
-    color: red;
-    font-size: 12px;
-  }
-  
-  .success-message {
-    color: green;
-    text-align: center;
-    margin-top: 20px;
-  }
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
 
-  .login-option {
-    text-align: center;
-    margin-top: 15px;
-  }
+.signup-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
 
-  .login-option a {
-    color: #007bff;
-    cursor: pointer;
-    text-decoration: underline;
-  }
-  
+/* Form Fields */
+.signup-container form div {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.signup-container label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.signup-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Error Message */
+.signup-container .error {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+.signup-container button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.signup-container button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Login Option */
+.signup-container .login-option {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-container .login-option a {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signup-container .login-option a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

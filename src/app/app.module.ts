@@ -10,6 +10,8 @@ import { MarketplaceComponent } from './pages/marketplace/marketplace.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { LandingComponent } from './pages/landing/landing.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthService } from './services/auth.service';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

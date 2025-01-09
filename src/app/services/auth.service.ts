@@ -61,6 +61,8 @@ export class AuthService {
     const storedUser = localStorage.getItem('userData');
     console.log('Stored User:', storedUser);
 
+    this.isLoggedIn = true; // Add this line
+
     this.autoLogout(+response.expiresIn * 1000);
   }
 
